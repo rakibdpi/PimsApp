@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 User Interface", "01 User Interface", "{9493904D-FCC8-41DA-BB12-2F02C52EDB6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Service", "02 Service", "{505BBBF7-273D-43AF-921F-CAD922C1632A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Persistense", "03 Persistense", "{5009765E-0073-4D19-AEC4-872A35C3A31E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Core", "04 Core", "{5D785450-7479-4362-ACD0-0CF36E591339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pims.Core", "Pims.Core\Pims.Core.csproj", "{0183E06D-5D99-4C7C-944C-E9D1B096A165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pims.Persistense", "Pims.Persistense\Pims.Persistense.csproj", "{37E05A42-DB38-4025-B814-2F288031C6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pims.Service", "Pims.Service\Pims.Service.csproj", "{DDD9C35F-FD1C-4F7F-9B11-B8B32B6AECA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PimsApp", "PimsApp\PimsApp.csproj", "{67E28434-A931-4B3E-B322-00982FB43EC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0183E06D-5D99-4C7C-944C-E9D1B096A165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0183E06D-5D99-4C7C-944C-E9D1B096A165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0183E06D-5D99-4C7C-944C-E9D1B096A165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0183E06D-5D99-4C7C-944C-E9D1B096A165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E05A42-DB38-4025-B814-2F288031C6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E05A42-DB38-4025-B814-2F288031C6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E05A42-DB38-4025-B814-2F288031C6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E05A42-DB38-4025-B814-2F288031C6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD9C35F-FD1C-4F7F-9B11-B8B32B6AECA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD9C35F-FD1C-4F7F-9B11-B8B32B6AECA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD9C35F-FD1C-4F7F-9B11-B8B32B6AECA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD9C35F-FD1C-4F7F-9B11-B8B32B6AECA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E28434-A931-4B3E-B322-00982FB43EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E28434-A931-4B3E-B322-00982FB43EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E28434-A931-4B3E-B322-00982FB43EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E28434-A931-4B3E-B322-00982FB43EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0183E06D-5D99-4C7C-944C-E9D1B096A165} = {5D785450-7479-4362-ACD0-0CF36E591339}
+		{37E05A42-DB38-4025-B814-2F288031C6FB} = {5009765E-0073-4D19-AEC4-872A35C3A31E}
+		{DDD9C35F-FD1C-4F7F-9B11-B8B32B6AECA0} = {505BBBF7-273D-43AF-921F-CAD922C1632A}
+		{67E28434-A931-4B3E-B322-00982FB43EC3} = {9493904D-FCC8-41DA-BB12-2F02C52EDB6D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94A6531F-EC8A-4B34-BC15-23813D758A2F}
+	EndGlobalSection
+EndGlobal
