@@ -36,6 +36,8 @@
     });
 
 
+    loadHistoryTable();
+
 });
 
 
@@ -75,9 +77,9 @@ $(document.body).on("click",
                 success: function (e) {
                     if (e > 0) {
                         toastr.success("Save Success", "Success!!!");
-                        //refressForm();
-                        //loadHistoryTable();
+                        loadHistoryTable();
                         GenaratePersonalNumber();
+                        refreshForm();
 
                     } else {
                         toastr.warning("Save Fail", "Warning!!!");
@@ -98,7 +100,7 @@ $(document.body).on("click",
                 success: function (e) {
                     if (e > 0) {
                         toastr.success("Update Success", "Success!!!");
-                        refressForm();
+                        refreshForm();
                         loadHistoryTable();
                     } else {
                         toastr.warning("Update Fail.", "Warning!!!");
@@ -114,13 +116,6 @@ $(document.body).on("click",
     });
 
 
-
-
-
-
-
-
-
 function GenaratePersonalNumber() {
 
     $.get("/api/GeneralInformations/GenerateEmployeId",
@@ -130,4 +125,72 @@ function GenaratePersonalNumber() {
             }
 
         });
+}
+
+function refreshForm() {
+    $("#NameBangla").val("");
+    $("#NameEnglish").val("");
+    $("#FatherName").val("");
+    $("#MotherName").val("");
+    $("#BithDate").val("");
+    $("#BirthPlace").val("");
+    $("#Nationality").val("");
+    $("#PresentAddress").val("");
+    $("#PermanentAddress").val("");
+    $("#BloodGroup").val("");
+    $("#Religion").val("");
+    $("#MeritialStatus").val("");
+    $("#PhoneNo").val("");
+    $("#Email").val("");
+    $("#NationalId").val("");
+    $("#DesignationId").val("");
+    $("#DepartmentId").val("");
+    $("#Position").val("");
+    $("#JobJoiningDate").val("");
+}
+
+function loadHistoryTable() {
+
+
+    $("#employeList").DataTable().destroy();
+
+    $("#employeList").DataTable({
+        retrieve: true,
+        paging: true,
+        ajax: {
+            url: "/api/GeneralInformations",
+            dataSrc: ""
+        },
+        columns: [
+            {
+                data: "employeId"
+            },
+            {
+                data: "nameEnglish"
+            },
+            {
+                data: "phoneNo"
+            },
+            {
+                data: "email"
+            },
+            {
+                data: "nationalId"
+            },
+            {
+                data: "id",
+                render: function (data) {
+                    return "<a class='btn btn-info btn-sm js-edit' data-id=" + data + " ><i class='fa fa-pencil-square fa-2x ' aria-hidden='false'></i></a>";
+                }
+            },
+            {
+                data: "id",
+                render: function (data) {
+                    return "<a class='btn-link js-delete'  data-id=" + data + "><i class='fa fa-trash fa-2x' aria-hidden='true' style='color: #d9534f;'></i></a>";
+                }
+            }
+        ]
+    });
+
+
 }
