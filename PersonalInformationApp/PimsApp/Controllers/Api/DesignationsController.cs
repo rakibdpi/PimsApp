@@ -14,6 +14,7 @@ namespace PimsApp.Controllers.Api
         DesignationManager _manager = new DesignationManager();
 
         // GET: api/Designations
+
         public IHttpActionResult Get()
         {
             try
