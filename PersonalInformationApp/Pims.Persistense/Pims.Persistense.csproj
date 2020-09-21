@@ -69,6 +69,10 @@
     <Compile Include="Migrations\202009171129427_UpdateGeneralInfoTable.Designer.cs">
       <DependentUpon>202009171129427_UpdateGeneralInfoTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009211053556_SomeChange.cs" />
+    <Compile Include="Migrations\202009211053556_SomeChange.Designer.cs">
+      <DependentUpon>202009211053556_SomeChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009171129427_UpdateGeneralInfoTable.resx">
       <DependentUpon>202009171129427_UpdateGeneralInfoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009211053556_SomeChange.resx">
+      <DependentUpon>202009211053556_SomeChange.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

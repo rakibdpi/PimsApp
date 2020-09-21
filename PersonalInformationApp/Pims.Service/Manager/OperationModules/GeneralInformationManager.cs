@@ -40,8 +40,8 @@ namespace Pims.Service.Manager.OperationModules
             entity.CreateDate = DateTime.Now;
             entity.IsDelete = false;
             _dbContext.GeneralInformations.Add(entity);
-            var isSave = _dbContext.SaveChanges();
-            return isSave;
+            _dbContext.SaveChanges();
+            return entity.Id;
         }
 
         public int Update(int id, GeneralInformationViewModel vm)
@@ -50,8 +50,8 @@ namespace Pims.Service.Manager.OperationModules
             Mapper.Map(vm, entity);
             entity.UpdateBy = "User";
             entity.UpdateDate = DateTime.Now;
-            var isUpdate = _dbContext.SaveChanges();
-            return isUpdate;
+            _dbContext.SaveChanges();
+            return entity.Id;
         }
 
         public int Remove(int id)

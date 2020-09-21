@@ -36,7 +36,44 @@
     });
 
 
-    loadHistoryTable();
+   // loadHistoryTable();
+
+
+
+    $("#txtFindTrainee").autocomplete({
+       source: function (request, response) {
+           $.ajax({
+               url: "/api/GeneralInformations/Search",
+               data: { query: request.term },
+               type: "GET"
+           }).done(function (data) {
+               response($.map(data, function (item) {
+                   return { label: item.employeId + " " + item.nameEnglish, value: item.employeId }
+               }));
+           });
+       },
+       minLength: 2,
+       select: function (e, ui) {
+
+           $.get("/api/GeneralInformations/SearchAutoComplete", { pNumber: ui.item.value })
+               .done(function (data) {
+                   //console.log(pData);
+                  // window.pId = data.id;
+                   $("#Id").val(data.id);
+                   $("#SearchName").val(data.nameEnglish);
+                   $("#SearchPhoneNo").val(data.phoneNo);
+
+                   loadHistoryTable(data.id);
+
+               });
+
+       }
+   });
+
+
+
+
+
 
 });
 
@@ -77,7 +114,7 @@ $(document.body).on("click",
                 success: function (e) {
                     if (e > 0) {
                         toastr.success("Save Success", "Success!!!");
-                        loadHistoryTable();
+                        loadHistoryTable(e);
                         GenaratePersonalNumber();
                         refreshForm();
 
@@ -101,7 +138,7 @@ $(document.body).on("click",
                     if (e > 0) {
                         toastr.success("Update Success", "Success!!!");
                         refreshForm();
-                        loadHistoryTable();
+                        loadHistoryTable(e);
                     } else {
                         toastr.warning("Update Fail.", "Warning!!!");
                     }
@@ -149,7 +186,7 @@ function refreshForm() {
     $("#JobJoiningDate").val("");
 }
 
-function loadHistoryTable() {
+function loadHistoryTable(id) {
 
 
     $("#employeList").DataTable().destroy();
@@ -158,7 +195,7 @@ function loadHistoryTable() {
         retrieve: true,
         paging: true,
         ajax: {
-            url: "/api/GeneralInformations",
+            url: "/api/GeneralInformations/GetInfoById?id=" + id,
             dataSrc: ""
         },
         columns: [
