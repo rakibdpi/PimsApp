@@ -73,6 +73,22 @@
     <Compile Include="Migrations\202009211053556_SomeChange.Designer.cs">
       <DependentUpon>202009211053556_SomeChange.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009221402097_CreateEducationInformation.cs" />
+    <Compile Include="Migrations\202009221402097_CreateEducationInformation.Designer.cs">
+      <DependentUpon>202009221402097_CreateEducationInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009221407292_CreateHomeTraingTable.cs" />
+    <Compile Include="Migrations\202009221407292_CreateHomeTraingTable.Designer.cs">
+      <DependentUpon>202009221407292_CreateHomeTraingTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009221410219_CreateEmergencyContact.cs" />
+    <Compile Include="Migrations\202009221410219_CreateEmergencyContact.Designer.cs">
+      <DependentUpon>202009221410219_CreateEmergencyContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009221417511_CreateTransferInformationTable.cs" />
+    <Compile Include="Migrations\202009221417511_CreateTransferInformationTable.Designer.cs">
+      <DependentUpon>202009221417511_CreateTransferInformationTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -104,6 +120,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009211053556_SomeChange.resx">
       <DependentUpon>202009211053556_SomeChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009221402097_CreateEducationInformation.resx">
+      <DependentUpon>202009221402097_CreateEducationInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009221407292_CreateHomeTraingTable.resx">
+      <DependentUpon>202009221407292_CreateHomeTraingTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009221410219_CreateEmergencyContact.resx">
+      <DependentUpon>202009221410219_CreateEmergencyContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009221417511_CreateTransferInformationTable.resx">
+      <DependentUpon>202009221417511_CreateTransferInformationTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

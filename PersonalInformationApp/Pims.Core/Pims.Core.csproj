@@ -61,8 +61,14 @@
     <Compile Include="CommonModel\DateTimeFormater.cs" />
     <Compile Include="Model\Department.cs" />
     <Compile Include="Model\Designation.cs" />
+    <Compile Include="Model\OperationModules\EducationInformations.cs" />
+    <Compile Include="Model\OperationModules\EmergencyContact.cs" />
+    <Compile Include="Model\OperationModules\FamilyInfortation.cs" />
     <Compile Include="Model\OperationModules\GeneralInformation.cs" />
+    <Compile Include="Model\OperationModules\HomeTrainingInformation.cs" />
+    <Compile Include="Model\OperationModules\TransferInformation.cs" />
     <Compile Include="Model\Organization.cs" />
+    <Compile Include="Model\SetupModules\University.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\DepartmentViewModel.cs" />
     <Compile Include="ViewModel\DesignationViewModel.cs" />
