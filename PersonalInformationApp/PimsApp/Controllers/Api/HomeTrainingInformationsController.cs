@@ -15,35 +15,7 @@ namespace PimsApp.Controllers.Api
         HomeTrainingInformationManager _manager = new HomeTrainingInformationManager();
 
 
-        //[Route("api/HomeTrainingInformations/SearchAutoComplete")]
-        //[HttpGet]
-        //public IHttpActionResult SearchAutoComplete(string pNumber)
-        //{
-        //    try
-        //    {
-        //        var info = _manager.GetAll().SingleOrDefault(c => c.EmployeId == pNumber);
-        //        return Ok(info);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return BadRequest(e.Message);
-        //    }
-        //}
 
-
-
-        //[Route("api/HomeTrainingInformations/Search")]
-        //[HttpGet]
-        //public IHttpActionResult Search(string query = null)
-        //{
-        //    if (!String.IsNullOrWhiteSpace(query))
-        //    {
-        //        var a = _manager.GetAll().Where(c => c.EmployeId.Contains(query))
-        //            .ToList();
-        //        return Ok(a);
-        //    }
-        //    return Ok(0);
-        //}
 
 
 
