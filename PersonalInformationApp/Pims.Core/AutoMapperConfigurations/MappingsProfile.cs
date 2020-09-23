@@ -41,7 +41,8 @@ namespace Pims.Core.AutoMapperConfigurations
                     opt => opt.MapFrom(m => DateTimeFormater.StringToDate(m.JobJoiningDate)));
 
 
-
+            CreateMap<HomeTrainingInformation, HomeTrainingInformationViewModel>();
+            CreateMap<HomeTrainingInformationViewModel, HomeTrainingInformation>();
 
         }
     }

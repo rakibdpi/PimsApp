@@ -73,6 +73,7 @@
     <Compile Include="ViewModel\DepartmentViewModel.cs" />
     <Compile Include="ViewModel\DesignationViewModel.cs" />
     <Compile Include="ViewModel\OperationModules\GeneralInformationViewModel.cs" />
+    <Compile Include="ViewModel\OperationModules\HomeTrainingInformationViewModel.cs" />
     <Compile Include="ViewModel\OrganizationViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
