@@ -57,10 +57,12 @@
   <ItemGroup>
     <Compile Include="Manager\DepartmentManager.cs" />
     <Compile Include="Manager\DesignationManager.cs" />
+    <Compile Include="Manager\OperationModules\EducationInformationsManager.cs" />
     <Compile Include="Manager\OperationModules\GeneralInformationManager.cs" />
     <Compile Include="Manager\OperationModules\HomeTrainingInformationManager.cs" />
     <Compile Include="Manager\OperationModules\SocialMediaManager.cs" />
     <Compile Include="Manager\OrganizationManager.cs" />
+    <Compile Include="Manager\UniversityManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
