@@ -29,8 +29,7 @@ namespace Pims.Service.Manager.OperationModules
         {
             var entity = _dbContext.GeneralInformations.ToList().Where(c => c.IsDelete == false)
                 .Select(Mapper.Map<GeneralInformation, GeneralInformationViewModel>);
-            var entity = _dbContext.GeneralInformations.ToList().Where(c=>c.IsDelete==false)
-                        .Select(Mapper.Map<GeneralInformation, GeneralInformationViewModel>);
+          
             return entity;
         }
 

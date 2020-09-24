@@ -77,8 +77,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\Pims.Core.dll.config" />
+    <None Include="bin\Debug\Pims.Persistense.dll.config" />
+    <None Include="bin\Debug\Pims.Service.dll.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\AutoMapper.dll" />
+    <Content Include="bin\Debug\AutoMapper.pdb" />
+    <Content Include="bin\Debug\AutoMapper.xml" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\Pims.Core.dll" />
+    <Content Include="bin\Debug\Pims.Core.pdb" />
+    <Content Include="bin\Debug\Pims.Persistense.dll" />
+    <Content Include="bin\Debug\Pims.Persistense.pdb" />
+    <Content Include="bin\Debug\Pims.Service.dll" />
+    <Content Include="bin\Debug\Pims.Service.pdb" />
+    <Content Include="bin\Debug\System.ValueTuple.dll" />
+    <Content Include="bin\Debug\System.ValueTuple.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
