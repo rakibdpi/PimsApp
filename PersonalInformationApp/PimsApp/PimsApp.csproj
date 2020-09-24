@@ -495,6 +495,7 @@
     <Content Include="Scripts\FormScript\designationScript.js" />
     <Content Include="Scripts\FormScript\Form Script\generalInformationForm.js" />
     <Content Include="Scripts\FormScript\Form Script\homeTrainingInformationForm.js" />
+    <Content Include="Scripts\FormScript\Form Script\socialMediaForm.js" />
     <Content Include="Scripts\FormScript\organizationForm.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
@@ -513,6 +514,7 @@
     <Content Include="Views\Organizations\New.cshtml" />
     <Content Include="Views\GeneralInformations\EmployeEntry.cshtml" />
     <Content Include="Views\HomeTrainingInformations\HomeTrainingEntry.cshtml" />
+    <Content Include="Views\SocialMedias\SocialMediaEntry.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -527,11 +529,13 @@
     <Compile Include="Controllers\Api\GeneralInformationsController.cs" />
     <Compile Include="Controllers\Api\HomeTrainingInformationsController.cs" />
     <Compile Include="Controllers\Api\OrganizationsController.cs" />
+    <Compile Include="Controllers\Api\SocialMediasController.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\DesignationsController.cs" />
     <Compile Include="Controllers\GeneralInformationsController.cs" />
     <Compile Include="Controllers\HomeTrainingInformationsController.cs" />
     <Compile Include="Controllers\OrganizationsController.cs" />
+    <Compile Include="Controllers\SocialMediasController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

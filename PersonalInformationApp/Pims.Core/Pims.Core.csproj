@@ -66,6 +66,7 @@
     <Compile Include="Model\OperationModules\FamilyInfortation.cs" />
     <Compile Include="Model\OperationModules\GeneralInformation.cs" />
     <Compile Include="Model\OperationModules\HomeTrainingInformation.cs" />
+    <Compile Include="Model\OperationModules\SocialMedia.cs" />
     <Compile Include="Model\OperationModules\TransferInformation.cs" />
     <Compile Include="Model\Organization.cs" />
     <Compile Include="Model\SetupModules\University.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="ViewModel\DesignationViewModel.cs" />
     <Compile Include="ViewModel\OperationModules\GeneralInformationViewModel.cs" />
     <Compile Include="ViewModel\OperationModules\HomeTrainingInformationViewModel.cs" />
+    <Compile Include="ViewModel\OperationModules\SocialMediaViewModel.cs" />
     <Compile Include="ViewModel\OrganizationViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,13 +9,11 @@ using System.Web.Http;
 
 namespace PimsApp.Controllers.Api
 {
-    public class HomeTrainingInformationsController : ApiController
+    public class SocialMediasController : ApiController
     {
+        SocialMediaManager _manager = new SocialMediaManager();
 
-        HomeTrainingInformationManager _manager = new HomeTrainingInformationManager();
-
-
-        [Route("api/HomeTrainingInformations/GetInfoById")]
+        [Route("api/SocialMedias/GetInfoById")]
         [HttpGet]
         public IHttpActionResult GetInfoById(int id)
         {
@@ -30,7 +28,9 @@ namespace PimsApp.Controllers.Api
             }
         }
 
-        // GET: api/HomeTrainingInformations
+
+
+        // GET: api/SocialMedias
         public IHttpActionResult Get()
         {
             try
@@ -43,8 +43,7 @@ namespace PimsApp.Controllers.Api
                 return BadRequest(e.Message);
             }
         }
-
-        // GET: api/HomeTrainingInformations/5
+        // GET: api/SocialMedias/5
         public IHttpActionResult Get(int id)
         {
             try
@@ -62,8 +61,8 @@ namespace PimsApp.Controllers.Api
             }
         }
 
-        // POST: api/HomeTrainingInformations
-        public IHttpActionResult Post([FromBody]HomeTrainingInformationViewModel vm)
+        // POST: api/SocialMedias
+        public IHttpActionResult Post([FromBody]SocialMediaViewModel vm)
         {
             try
             {
@@ -81,9 +80,8 @@ namespace PimsApp.Controllers.Api
                 return BadRequest(e.Message);
             }
         }
-
-        // PUT: api/HomeTrainingInformations/5
-        public IHttpActionResult Put(int id, [FromBody]HomeTrainingInformationViewModel vm)
+        // PUT: api/SocialMedias/5
+        public IHttpActionResult Put(int id, [FromBody]SocialMediaViewModel vm)
         {
             try
             {
@@ -102,7 +100,7 @@ namespace PimsApp.Controllers.Api
             }
         }
 
-        // DELETE: api/HomeTrainingInformations/5
+        // DELETE: api/SocialMedias/5
         public IHttpActionResult Delete(int id)
         {
             try

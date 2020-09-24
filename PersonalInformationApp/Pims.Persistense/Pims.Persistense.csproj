@@ -93,6 +93,10 @@
     <Compile Include="Migrations\202009230747117_SomeChange1.Designer.cs">
       <DependentUpon>202009230747117_SomeChange1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009240538544_CreateSocialMediaTable.cs" />
+    <Compile Include="Migrations\202009240538544_CreateSocialMediaTable.Designer.cs">
+      <DependentUpon>202009240538544_CreateSocialMediaTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -139,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009230747117_SomeChange1.resx">
       <DependentUpon>202009230747117_SomeChange1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009240538544_CreateSocialMediaTable.resx">
+      <DependentUpon>202009240538544_CreateSocialMediaTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

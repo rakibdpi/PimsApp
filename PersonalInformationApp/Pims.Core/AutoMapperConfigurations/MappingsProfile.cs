@@ -44,6 +44,10 @@ namespace Pims.Core.AutoMapperConfigurations
             CreateMap<HomeTrainingInformation, HomeTrainingInformationViewModel>();
             CreateMap<HomeTrainingInformationViewModel, HomeTrainingInformation>();
 
+            CreateMap<SocialMedia, SocialMediaViewModel>();
+            CreateMap<SocialMediaViewModel, SocialMedia>();
+
+            
         }
     }
 }

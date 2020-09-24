@@ -29,5 +29,6 @@ namespace Pims.Persistense.DatabaseFile
         public DbSet<EmergencyContact> EmergencyContact { get; set; }
         public DbSet<FamilyInfortation> FamilyInfortations { get; set; }
         public DbSet<TransferInformation> TransferInformations { get; set; }
+        public DbSet<SocialMedia> SocialMedias { get; set; }
     }
 }
