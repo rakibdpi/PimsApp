@@ -185,6 +185,76 @@ function refreshForm() {
     $("#Position").val("");
     $("#JobJoiningDate").val("");
 }
+function getData(id) {
+    $.get("/api/GeneralInformations/" + id)
+        .done(function (data) {
+            $("#Id").val(data.id);
+            $("#NameBangla").val(data.nameBangla);
+            $("#NameEnglish").val(data.nameEnglish);
+            $("#FatherName").val(data.fatherName);
+            $("#MotherName").val(data.motherName);
+            $("#BirthDate").val(data.birthDate);
+            $("#BirthPlace").val(data.birthPlace);
+            $("#Nationality").val(data.nationality);
+            $("#PresentAddress").val(data.presentAddress);
+            $("#PermanentAddress").val(data.permanentAddress);
+            $("#BloodGroup").val(data.bloodGroup);
+            $("#Religion").val(data.religion);
+            $("#Gender").val(data.gender);
+            $("#MeritialStatus").val(data.meritialStatus);
+            $("#PhoneNo").val(data.phoneNo);
+            $("#Email").val(data.email);
+            $("#NationalId").val(data.nationalId);
+            $("#DepartmentId").val(data.departmentId);
+            $("#DesignationId").val(data.designationId);
+            $("#Position").val(data.position);
+            $("#JobJoiningDate").val(data.jobJoiningDate);
+
+            if (data.isActive == 1) {
+                $("#IsActive").prop('checked', true);
+                $(".icheckbox_minimal-blue").addClass('checked').attr('aria-checked', 'true');
+            }
+            else {
+                $("#IsActive").prop('checked', false);
+                $(".icheckbox_minimal-blue").removeClass('checked').attr('aria-checked', 'false');
+            }
+        });
+}
+
+
+
+$(document.body).on("click",
+    ".js-edit",
+    function () {
+        refreshForm();
+        var button = $(this);
+        var id = button.attr("data-id");
+        getData(id);
+    });
+
+
+
+$(document.body).on("click", ".js-delete", function () {
+    var button = $(this);
+    var id = button.attr("data-id");
+    bootbox.confirm("Are You Delete This Data?",
+        function (result) {
+            if (result) {
+                $.ajax({
+                    url: "/api/GeneralInformations/" + id,
+                    method: "DELETE",
+                    success: function () {
+                        button.parents("tr").remove();
+                        toastr.success("Delete Success");
+                    },
+                    error: function (request, status, error) {
+                        var response = jQuery.parseJSON(request.responseText);
+                        toastr.error(response.message, "Error");
+                    }
+                });
+            }
+        });
+});
 
 function loadHistoryTable(id) {
 

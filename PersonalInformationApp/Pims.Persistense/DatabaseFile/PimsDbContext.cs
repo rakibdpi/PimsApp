@@ -1,5 +1,6 @@
 ﻿using Pims.Core.Model;
 using Pims.Core.Model.OperationModules;
+using Pims.Core.Model.SetupModules;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -20,14 +21,17 @@ namespace Pims.Persistense.DatabaseFile
 
         public DbSet<Organization> Organizations { get; set; }
 
+        public DbSet<University> universities { get; set; }
+
 
         //Opertion Modules
-    
+
         public DbSet<GeneralInformation> GeneralInformations { get; set; }
         public DbSet<EducationInformations> EducationsInformations { get; set; }
         public DbSet<HomeTrainingInformation> HomeTrainingInformations { get; set; }
         public DbSet<EmergencyContact> EmergencyContact { get; set; }
         public DbSet<FamilyInfortation> FamilyInfortations { get; set; }
         public DbSet<TransferInformation> TransferInformations { get; set; }
+      
     }
 }

@@ -493,6 +493,7 @@
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\FormScript\departmentForm.js" />
     <Content Include="Scripts\FormScript\designationScript.js" />
+    <Content Include="Scripts\FormScript\Form Script\educationInformationsform.js" />
     <Content Include="Scripts\FormScript\Form Script\generalInformationForm.js" />
     <Content Include="Scripts\FormScript\organizationForm.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
@@ -511,6 +512,7 @@
     <Content Include="Views\Designations\New.cshtml" />
     <Content Include="Views\Organizations\New.cshtml" />
     <Content Include="Views\GeneralInformations\EmployeEntry.cshtml" />
+    <Content Include="Views\EducationInformations\EduEntry.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -522,10 +524,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Api\DepartmentsController.cs" />
     <Compile Include="Controllers\Api\DesignationsController.cs" />
+    <Compile Include="Controllers\Api\EducationInformationsController.cs" />
     <Compile Include="Controllers\Api\GeneralInformationsController.cs" />
     <Compile Include="Controllers\Api\OrganizationsController.cs" />
+    <Compile Include="Controllers\Api\UniversityController.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\DesignationsController.cs" />
+    <Compile Include="Controllers\EducationInformationsController.cs" />
     <Compile Include="Controllers\GeneralInformationsController.cs" />
     <Compile Include="Controllers\OrganizationsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

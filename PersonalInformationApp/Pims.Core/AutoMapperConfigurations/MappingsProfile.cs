@@ -40,7 +40,9 @@ namespace Pims.Core.AutoMapperConfigurations
                 .ForMember(dto => dto.JobJoiningDate,
                     opt => opt.MapFrom(m => DateTimeFormater.StringToDate(m.JobJoiningDate)));
 
-
+            CreateMap<EducationInformations, EducationInformationsViewModel>();
+            CreateMap<EducationInformationsViewModel, EducationInformations>();
+              
 
 
         }
