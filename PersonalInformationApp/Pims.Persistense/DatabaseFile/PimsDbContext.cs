@@ -1,12 +1,8 @@
 ﻿using Pims.Core.Model;
 using Pims.Core.Model.OperationModules;
 using Pims.Core.Model.SetupModules;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Pims.Persistense.DatabaseFile
 {
@@ -34,5 +30,10 @@ namespace Pims.Persistense.DatabaseFile
         public DbSet<TransferInformation> TransferInformations { get; set; }
       
         public DbSet<SocialMedia> SocialMedias { get; set; }
+
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        //}
     }
 }

@@ -509,6 +509,7 @@
     <Content Include="Scripts\FormScript\departmentForm.js" />
     <Content Include="Scripts\FormScript\designationScript.js" />
     <Content Include="Scripts\FormScript\Form Script\educationInformationsform.js" />
+    <Content Include="Scripts\FormScript\Form Script\EmergencyContact.js" />
     <Content Include="Scripts\FormScript\Form Script\generalInformationForm.js" />
     <Content Include="Scripts\FormScript\Form Script\homeTrainingInformationForm.js" />
     <Content Include="Scripts\FormScript\Form Script\socialMediaForm.js" />
@@ -532,6 +533,7 @@
     <Content Include="Views\EducationInformations\EduEntry.cshtml" />
     <Content Include="Views\HomeTrainingInformations\HomeTrainingEntry.cshtml" />
     <Content Include="Views\SocialMedias\SocialMediaEntry.cshtml" />
+    <Content Include="Views\EmergencyContact\EmergencyContact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -544,6 +546,7 @@
     <Compile Include="Controllers\Api\DepartmentsController.cs" />
     <Compile Include="Controllers\Api\DesignationsController.cs" />
     <Compile Include="Controllers\Api\EducationInformationsController.cs" />
+    <Compile Include="Controllers\Api\EmergencyContactController.cs" />
     <Compile Include="Controllers\Api\GeneralInformationsController.cs" />
     <Compile Include="Controllers\Api\HomeTrainingInformationsController.cs" />
     <Compile Include="Controllers\Api\OrganizationsController.cs" />
@@ -552,6 +555,7 @@
     <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\DesignationsController.cs" />
     <Compile Include="Controllers\EducationInformationsController.cs" />
+    <Compile Include="Controllers\EmergencyContactController.cs" />
     <Compile Include="Controllers\GeneralInformationsController.cs" />
     <Compile Include="Controllers\HomeTrainingInformationsController.cs" />
     <Compile Include="Controllers\OrganizationsController.cs" />

@@ -89,20 +89,20 @@
       <DependentUpon>202009221407292_CreateHomeTraingTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202009221410219_CreateEmergencyContact.cs" />
-    <Compile Include="Migrations\202009221410219_CreateEmergencyContact.Designer.cs">
+    <Compile Include="Migrations\202009221410219_CreateEmergencyContact.designer.cs">
       <DependentUpon>202009221410219_CreateEmergencyContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202009221417511_CreateTransferInformationTable.cs" />
     <Compile Include="Migrations\202009221417511_CreateTransferInformationTable.Designer.cs">
       <DependentUpon>202009221417511_CreateTransferInformationTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202009230747117_SomeChange1.cs" />
-    <Compile Include="Migrations\202009230747117_SomeChange1.Designer.cs">
-      <DependentUpon>202009230747117_SomeChange1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202009240538544_CreateSocialMediaTable.cs" />
     <Compile Include="Migrations\202009240538544_CreateSocialMediaTable.Designer.cs">
       <DependentUpon>202009240538544_CreateSocialMediaTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009270529553_UpdateEmergrncyContract.cs" />
+    <Compile Include="Migrations\202009270529553_UpdateEmergrncyContract.Designer.cs">
+      <DependentUpon>202009270529553_UpdateEmergrncyContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,11 +148,11 @@
     <EmbeddedResource Include="Migrations\202009221417511_CreateTransferInformationTable.resx">
       <DependentUpon>202009221417511_CreateTransferInformationTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009230747117_SomeChange1.resx">
-      <DependentUpon>202009230747117_SomeChange1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009240538544_CreateSocialMediaTable.resx">
       <DependentUpon>202009240538544_CreateSocialMediaTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009270529553_UpdateEmergrncyContract.resx">
+      <DependentUpon>202009270529553_UpdateEmergrncyContract.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

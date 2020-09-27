@@ -58,6 +58,7 @@
     <Compile Include="Manager\DepartmentManager.cs" />
     <Compile Include="Manager\DesignationManager.cs" />
     <Compile Include="Manager\OperationModules\EducationInformationsManager.cs" />
+    <Compile Include="Manager\OperationModules\EmergencyContactManager.cs" />
     <Compile Include="Manager\OperationModules\GeneralInformationManager.cs" />
     <Compile Include="Manager\OperationModules\HomeTrainingInformationManager.cs" />
     <Compile Include="Manager\OperationModules\SocialMediaManager.cs" />

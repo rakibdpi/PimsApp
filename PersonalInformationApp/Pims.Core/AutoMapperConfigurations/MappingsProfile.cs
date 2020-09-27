@@ -50,7 +50,10 @@ namespace Pims.Core.AutoMapperConfigurations
             CreateMap<SocialMedia, SocialMediaViewModel>();
             CreateMap<SocialMediaViewModel, SocialMedia>();
 
-            
+
+            CreateMap<EmergencyContact, EmergencyContactViewModel>();
+            CreateMap<EmergencyContactViewModel, EmergencyContact>();
+
         }
     }
 }
