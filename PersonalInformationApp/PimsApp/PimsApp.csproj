@@ -505,6 +505,17 @@
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\PimsApp.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\PimsApp.csprojAssemblyReference.cache" />
+    <Content Include="Reports\ReportDataset.xsc">
+      <DependentUpon>ReportDataset.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ReportDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataset.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ReportDataset.xss">
+      <DependentUpon>ReportDataset.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\FormScript\departmentForm.js" />
     <Content Include="Scripts\FormScript\designationScript.js" />
@@ -566,6 +577,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataset.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -707,6 +723,9 @@
       <Project>{ddd9c35f-fd1c-4f7f-9b11-b8b32b6aeca0}</Project>
       <Name>Pims.Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\AllEmploye.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

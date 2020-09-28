@@ -155,5 +155,6 @@
       <DependentUpon>202009270529553_UpdateEmergrncyContract.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
