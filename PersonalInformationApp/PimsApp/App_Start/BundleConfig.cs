@@ -39,7 +39,7 @@ namespace PimsApp.App_Start
                .Include("~/Content/DataTables/css/jquery.dataTables.min.css")
                .Include("~/Content/DataTables/css/rowReorder.dataTables.css")
                .Include("~/Content/DataTables/css/responsive.dataTables.css")
-               //.Include("~/Content/jquery.fancybox.css")
+               .Include("~/Content/jquery.fancybox.css")
                .Include("~/Content/toastr.css"));
 
 

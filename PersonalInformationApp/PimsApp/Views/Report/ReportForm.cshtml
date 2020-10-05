@@ -1,0 +1,62 @@
+﻿@model Pims.Core.ViewModel.Report.ReportViewModel
+
+@{
+    ViewBag.Title = "ReportForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-12 col-sm-12">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">Employee Information</div>
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <br />
+                            @Html.RadioButtonFor(model => model.PimsReport, "AllEmployee", htmlAttributes: new { @id = "AllEmployee" }) All Employee <br /> <br />
+                            @Html.RadioButtonFor(model => model.PimsReport, "Individual", htmlAttributes: new { @id = "Individual" }) Individual<br /><br />
+                            @Html.RadioButtonFor(model => model.PimsReport, "Designation", htmlAttributes: new { @id = "Designation" }) Designation<br /><br />
+
+                        </div>
+                    </div>
+                    @*<div class="col-md-8">
+                            <div class="form-group" id="nameHideShow">
+                                @Html.LabelFor(model => model.DbEnrollmentNo, "DB Enrollment No", htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.DbEnrollmentNo, new { htmlAttributes = new { @class = "form-control" } })
+                            </div>
+                            <div class="form-group" id="designationHideShow">
+                                @Html.LabelFor(model => model.DesignationId, "Designation", htmlAttributes: new { @class = "control-label" })
+                                @Html.DropDownListFor(c => c.DesignationId, null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                            <div class="form-group" id="classHideShow">
+                                @Html.LabelFor(model => model.EmployeClass, "Class", htmlAttributes: new { @class = "control-label" })
+                                <select name="GenderList" id="EmployeClass" class="form-control">
+                                    <option value=""></option>
+                                    <option text="">A</option>
+                                    <option text="">B</option>
+                                    <option text="">C</option>
+                                    <option text="">D</option>
+                                    <option text="">E</option>
+                                    <option text="">F</option>
+                                </select>
+                            </div>
+                        </div>*@
+                    <input type="button" id="btnPimsReport" value="Report Run" class="btn btn-primary btn-block" />
+                    <a id="pdf" class="hidden" runat="server">click me</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@section ViewSpecificJavascript
+{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.fancybox.js"></script>
+    <script src="~/Scripts/Report/reportForm.js"></script>
+
+
+}

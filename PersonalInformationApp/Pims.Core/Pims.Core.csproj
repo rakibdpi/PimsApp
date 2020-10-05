@@ -80,6 +80,7 @@
     <Compile Include="ViewModel\OperationModules\HomeTrainingInformationViewModel.cs" />
     <Compile Include="ViewModel\OperationModules\SocialMediaViewModel.cs" />
     <Compile Include="ViewModel\OrganizationViewModel.cs" />
+    <Compile Include="ViewModel\Report\ReportViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

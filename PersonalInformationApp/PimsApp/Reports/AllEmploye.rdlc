@@ -4,7 +4,7 @@
     <ReportItems>
       <Line Name="Line1">
         <Top>0.03056in</Top>
-        <Left>0.16542in</Left>
+        <Left>0.09042in</Left>
         <Height>0in</Height>
         <Width>6.19792in</Width>
         <Style>
@@ -17,28 +17,28 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.35882in</Width>
+              <Width>0.36819in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.75465in</Width>
+              <Width>0.76402in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.94781in</Width>
+              <Width>0.95718in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.7859in</Width>
+              <Width>0.79527in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.86923in</Width>
+              <Width>0.8786in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.85078in</Width>
+              <Width>0.86015in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.67132in</Width>
+              <Width>0.68069in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.82161in</Width>
+              <Width>0.83098in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -345,7 +345,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox4</rd:DefaultName>
@@ -375,7 +377,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>EmployeId</rd:DefaultName>
@@ -405,7 +409,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Name</rd:DefaultName>
@@ -435,7 +441,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>PhoneNo</rd:DefaultName>
@@ -465,7 +473,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Email</rd:DefaultName>
@@ -495,7 +505,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Addrees</rd:DefaultName>
@@ -525,7 +537,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>BloodGroup</rd:DefaultName>
@@ -555,7 +569,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>NationalId</rd:DefaultName>
@@ -600,9 +616,9 @@
         </TablixRowHierarchy>
         <DataSetName>AllEmployeeReportDataset</DataSetName>
         <Top>0.1in</Top>
-        <Left>0.16542in</Left>
-        <Height>0.54167in</Height>
-        <Width>6.06012in</Width>
+        <Left>0.09042in</Left>
+        <Height>0.54166in</Height>
+        <Width>6.13512in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -618,10 +634,10 @@
       </Border>
     </Style>
   </Body>
-  <Width>6.36333in</Width>
+  <Width>6.35084in</Width>
   <Page>
     <PageHeader>
-      <Height>0.625in</Height>
+      <Height>0.60417in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -645,7 +661,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.025in</Top>
-          <Left>2.07375in</Left>
+          <Left>2.09875in</Left>
           <Height>0.29375in</Height>
           <Width>2.01042in</Width>
           <Style>
@@ -678,7 +694,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>0.36333in</Top>
-          <Left>2.38833in</Left>
+          <Left>2.41333in</Left>
           <Height>0.20833in</Height>
           <Width>1.35417in</Width>
           <ZIndex>1</ZIndex>
