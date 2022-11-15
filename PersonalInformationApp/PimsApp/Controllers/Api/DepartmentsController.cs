@@ -11,6 +11,8 @@ namespace PimsApp.Controllers.Api
 {
     public class DepartmentsController : ApiController
     {
+        //Manager's Object create
+
         DepartmentManager _manager = new DepartmentManager();
 
         // GET: api/Departments
@@ -26,11 +28,6 @@ namespace PimsApp.Controllers.Api
                 return BadRequest(e.Message);
             }
         }
-
-
-        //changes
-
-
 
         // GET: api/Departments/5
         public IHttpActionResult Get(int id)
