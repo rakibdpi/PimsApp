@@ -11,7 +11,7 @@ namespace PimsApp.Controllers.Api
 {
     public class DepartmentsController : ApiController
     {
-        //Manager's Object create from service
+        //Manager's Object create from service One
 
         DepartmentManager _manager = new DepartmentManager();
 
